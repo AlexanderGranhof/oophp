@@ -14,9 +14,9 @@ return [
         "title" => "Anax development and debugging utilities.",
     ],
     [
-        "text" => "Test",
-        "url" => "test",
-        "title" => "Some small routes for testing.",
+        "text" => "Guess",
+        "url" => "guess-intro",
+        "title" => "Guess",
     ],
     [
         "text" => "About",
