@@ -1,0 +1,130 @@
+div.input-container {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+
+    * {
+        flex: 100%;
+        margin: 5px 0;
+    }
+
+    input {
+        transition: background-color 120ms ease;
+        width: 100%;
+        font-size: 24px;
+        color: white;
+        background-color: #484848;
+        border: none;
+        text-align: center;
+        padding: 5px;
+        outline: none;
+
+        &:focus,
+        &:hover {
+            background-color: #414141 !important;
+        }
+    }
+
+    button {
+        color: white;
+        background-color: #616161;
+        border: none;
+        padding: 5px;
+        font-size: 24px;
+        width: 100%;
+        outline: none;
+        cursor: pointer;
+        transition: background-color 120ms ease;
+
+        &:active,
+        &:hover {
+            background-color: #414141 !important;
+        }
+    }
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #515151;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+div.column-2 {
+    margin: 0;
+    float: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+}
+
+div.message-container {
+    h1 {
+        font-size: 72px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        color: #616161;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        width: calc(80vw);
+    }
+
+    h1:nth-child(2) {
+        opacity: 0;
+    }
+
+    h1.in {
+        opacity: 0;
+        animation: in 0.3s 0.2s ease forwards;
+    }
+
+    h1.out {
+        animation: out 0.3s ease forwards;
+    }
+}
+
+@keyframes out {
+    from {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-30px);
+    }
+}
+
+@keyframes in {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0px);
+    }
+}
