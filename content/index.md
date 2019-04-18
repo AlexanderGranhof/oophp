@@ -2,11 +2,11 @@
 title: "Min fina titel"
 ---
 
-# Min me-sida i kursen oophp
+# Min me-sida i kursen design
 
 <!-- Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`. -->
 
-[FIGURE src="image/me2.jpg?w=300" class="right" caption="Bild på mig där jag väntar på en beställning på Max vid 23:00 tiden"]
+[FIGURE src="cimage/img.php?src=me2.jpg&w=300" class="right" caption="Bild på mig där jag väntar på en beställning på Max vid 23:00 tiden"]
 
 <!-- Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
 
@@ -25,7 +25,7 @@ Där använder jag för det mesta websockets och utvecklar lite små projekt med
 
 <br>
 <div markdown="1" class="byline">
-[FIGURE src="image/me3.png?w=200" class="left"]
+[FIGURE src="cimage/img.php?src=me3.jpg&w=300" class="left"]
 <br>
 <br>
 Jag heter Alexander Granhof, flyttat från stockholm men har bott i Dubai i det mesta av mitt liv. Jag har programmerat sedan 6:an och använt mest NodeJS, HTML, CSS, SASS, TS och JS för lite små projekt. Men jag har även använt PHP och SQL.

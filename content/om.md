@@ -22,8 +22,7 @@ Om
 Denna hemsidan är en del av kursen <a href="https://dbwebb.se/kurser/oophp-v5">oophp</a>.
 
 Du kan också hitta denna kursen på <a href="https://github.com/dbwebb-se/oophp">Github</a>
-
-[FIGURE src="image/new-php-logo.png?w=200" class="left"]
+[FIGURE src="cimage/img.php?src=new-php-logo.png&w=200" class="left"]
 
 
 <!-- Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
