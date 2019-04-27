@@ -54,6 +54,11 @@ return [
             "title" => "Guess",
         ],
         [
+            "text" => "Dice100",
+            "url" => "dice100-intro",
+            "title" => "Dice100",
+        ],
+        [
             "text" => "Anax dev",
             "url" => "dev",
             "title" => "Anax development utilities",

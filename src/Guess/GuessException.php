@@ -1,7 +1,7 @@
 <?php
-namespace \Algn\GuessException;
+namespace Algn\Guess;
 
-class GuessException extends Exception
+class GuessException extends \Exception
 {
     
 }

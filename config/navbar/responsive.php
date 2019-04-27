@@ -50,6 +50,11 @@ return [
             "title" => "Dokumentation av ramverk och liknande.",
         ],
         [
+            "text" => "Dice100",
+            "url" => "dice100-intro",
+            "title" => "Dice100",
+        ],
+        [
             "text" => "Test &amp; Lek",
             "url" => "lek",
             "title" => "Testa och lek med test- och exempelprogram",

@@ -29,6 +29,11 @@ return [
             "title" => "Välj stylesheet.",
         ],
         [
+            "text" => "Dice100",
+            "url" => "dice100-intro",
+            "title" => "Dice100",
+        ],
+        [
             "text" => "Verktyg",
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
