@@ -11,7 +11,10 @@
  */
 $app->router->get("lek/hello-world", function () use ($app) {
     // echo "Some debugging information";
-    return "Hello World";
+
+    var_dump(new \Algn\Dice100\Player());
+
+    return "Hej";
 });
 
 

@@ -1,6 +1,6 @@
 <?php
-require(__DIR__ . "/autoload.php");
-require(__DIR__ . "/config.php");
+require(__DIR__ . "../../../autoloader.php");
+require(__DIR__ . "./config.php");
 
 session_start();
 

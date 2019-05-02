@@ -30,6 +30,36 @@ class Player
      * @return Array
      */
 
+    public function getHand()
+    {
+        return $this->hand;
+    }
+
+    public function getScore()
+    {
+        return $this->score;
+    }
+
+    public function getRoundScore()
+    {
+        return $this->roundScore;
+    }
+
+    public function getMaxScore()
+    {
+        return $this->maxScore;
+    }
+
+    public function getStart()
+    {
+        return $this->start;
+    }
+
+    public function getHistogram()
+    {
+        return $this->hand->getHistogram();
+    }
+
     public function roll()
     {
         $rolls = $this->hand->roll();
@@ -79,6 +109,7 @@ class Player
 class Hand
 {
     private $dice;
+    private $histogram;
 
     /**
      * @param int - Number of dies
@@ -88,7 +119,10 @@ class Hand
     {
         for ($i = 0; $i < $dice; $i++) {
             $this->dice[] = new Dice();
+            // $this->dice[] = new DiceHistogram();
         }
+
+        $this->histogram = new DiceHistogram();
     }
 
     /**
@@ -102,7 +136,16 @@ class Hand
             $rolls[] = $this->dice[$i]->roll();
         }
 
+        $this->histogram->addData($rolls);
+
         return $rolls;
+    }
+
+    public function getHistogram()
+    {
+
+        // var_dump($this->histogram);
+        return $this->histogram->getAsText();
     }
 }
 
