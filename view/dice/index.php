@@ -6,7 +6,6 @@ namespace Anax\View;
 // $_SESSION["ai"] = new Algn\Dice100\Player();
 // $_SESSION["gameStart"] = false;
 
-
 echo "<pre>";
 
 

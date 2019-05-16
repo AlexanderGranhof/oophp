@@ -66,7 +66,7 @@ class DiceController implements AppInjectableInterface
 
         $data = [
             "session" => $this->app->session,
-            "post" => $this->app->request
+            "request" => $this->app->request
         ];
 
         $this->app->session->set("test", "123");
