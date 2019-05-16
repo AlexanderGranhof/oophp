@@ -7,7 +7,7 @@ return [
     "id" => "rm-menu",
     "wrapper" => null,
     "class" => "rm-default rm-mobile",
- 
+
     // Here comes the menu items
     "items" => [
         [
@@ -64,5 +64,20 @@ return [
             "url" => "dev",
             "title" => "Anax development utilities",
         ],
+        [
+            "text" => "Movie",
+            "url" => "movie",
+            "title" => "Movie",
+        ],
+        [
+            "text" => "Cms",
+            "url" => "cms",
+            "title" => "Cms",
+        ],
+        [
+            "text" => "TextFilter",
+            "url" => "textfilter",
+            "title" => "TextFilter",
+        ]
     ],
 ];
