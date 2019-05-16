@@ -1,0 +1,137 @@
+h1 {
+    border-bottom: 1px double #ccc;
+}
+
+main {
+    min-height: 10em;
+}
+
+table {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    border-collapse: collapse;
+}
+
+tr.first {
+    background-color: #ddd;
+}
+
+tr {
+    transition: 80ms ease-out;
+}
+
+tr:hover {
+    background-color: #eee;
+}
+
+th {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+td:last-child {
+    padding-right: 20px;
+}
+
+td,
+th {
+    padding: 5px 10px;
+}
+
+th,
+td {
+    text-align: left;
+}
+
+td:first-child,
+th:first-child {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+td:last-child,
+th:last-child {
+    padding-right: 20px;
+}
+
+img.thumb {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.navbar > a,
+form a {
+    transition: 80ms ease-out;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.25;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white !important;
+    text-decoration: none;
+    padding: 6px 8px;
+    background-color: #2196f3;
+}
+.navbar > a:hover,
+form a:hover {
+    background-color: #1e88e5;
+    color: rgb(236, 236, 236);
+}
+
+span.orderby > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.region-main {
+    margin-top: 40px;
+}
+
+h1,
+td,
+th {
+    font-family: Roboto, sans-serif;
+}
+
+th {
+    min-width: 50px;
+}
+
+.region-main input[type="submit"],
+.region-main input[type="reset"] {
+    cursor: pointer;
+    border: none;
+    transition: 80ms ease-out;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.25;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: #2196f3;
+}
+
+.region-main input[type="submit"]:hover,
+.region-main input[type="reset"]:hover {
+    background-color: #1e88e5;
+    color: rgb(236, 236, 236);
+}
